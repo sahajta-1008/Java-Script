@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h2 {
+            color: red
+        }
+
+        h3 {
+            color: orange
+        }
+
+        p {
+            color: yellow
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="demo"></h2>
+    <h3 id="demo2"></h3>
+    <p id="demo3"></p>
+
+    <script>
+        var a = 13
+        var b = 29
+        var c = a * b
+
+        document.getElementById("demo").innerHTML =
+            "The Product of " + a + " and " + b + " is " + c
+
+
+        var d = 137
+        var e = 294
+        var f = d + e
+
+        document.getElementById("demo2").innerHTML =
+            "The Sum of " + d + " and " + e + " is " + f
+
+
+        var s = 137
+        var t = 294
+        var u = s / t
+
+        document.getElementById("demo3").innerHTML =
+            "The Quotient of " + s + " and " + t + " is " + u
+    </script>
+</body>
+
+</html>
