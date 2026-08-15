@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo </title>
+    <style>
+        #zoo {
+            border: solid 2px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="zoo">
+        <div id="zone">Zone 1: <span id="zone-1"></span></div>
+        <div id="zone">Zone 2: <span id="zone-2"></span></div>
+        <div id="zone">Zone 3: <span id="zone-3"></span></div>
+        <div id="zone">Total Animals: <span id="total"></span></div>
+    </div>
+    <br>
+    <button onclick="submit()">Open the zoo!</button>
+
+    <p id="zoo-status"></p>
+
+    <script>
+        function submit() {
+            document.getElementById("zone-1").innerHTML = "Elephant"
+            document.getElementById("zone-2").innerHTML = "Lion"
+            document.getElementById("zone-3").innerHTML = "Giraffe"
+            document.getElementById("total").innerHTML = "3"
+            document.getElementById("zoo").style.backgroundColor = "lightgreen"
+            document.getElementById("zoo-status").innerHTML= document.title + " is now open!"
+        }
+
+
+    </script>
+</body>
+
+</html>
